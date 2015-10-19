@@ -1,4 +1,5 @@
-import java.util.Iterator ;
+import java.util.Iterator;
+import java.lang.Iterable;
 
 public class TestDict {
     public static void main(String [] arg) {
@@ -14,17 +15,17 @@ public class TestDict {
         // CI-DESSOUS LES TESTS À RAJOUTER APRÈS AVOIR
         // IMPLÉMENTÉ DANS TabDict L'INTERFACE ITERABLE
         
-        // Iterator it = d.iterator() ;
-        // while (it.hasNext()) {
-        //     Object o = it.next() ;
-        //     System.out.println(o) ;
-        //     if (o.equals(36)) {
-        //         System.out.println("J'enlève "+o) ;
-        //         it.remove() ;
-        //     }
-        // }
-        // for (Object o: d) 
-        //     System.out.println(d.assocPour(o)) ;
-        
+        Iterator it = d.iterator() ;
+        while (it.hasNext()) {
+	    Object o = it.next() ;
+            System.out.println(o) ;
+            if (o.equals(36)) {
+                 System.out.println("J'enlève "+o) ;
+                 it.remove() ;
+             }
+         }
+         for (Object o: d) 
+             System.out.println(d.assocPour(o)) ;
     }
+    
 }
