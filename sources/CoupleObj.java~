@@ -1,0 +1,21 @@
+class CoupleObj implements Couple<X,Y> {
+    public X premier() {
+
+    }
+
+    public Y second() {
+
+    }
+
+    public void defPremier(X x) {
+
+    }
+
+    public void defSecond(Y y) {
+
+    }
+    
+    public boolean equals(Object o) {
+
+    }
+}
